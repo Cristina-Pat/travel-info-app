@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "65fc434c78966d8c0fc04010"
+  },
+  "username": "Cris",
+  "email": "cristina@hello.com",
+  "password": "$2a$10$.oT/jPOt.P.3ygftuLhBPOERNHTvB0vKE33No/f5FznYXaWw1P2b6",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fc47501974f40349719edc"
+  },
+  "username": "Hulla",
+  "email": "hulla@hello.com",
+  "password": "$2a$10$QOQ6UzZl.cqqLB2iKMr/4O5/7n3E2xa51zeWYTZeAiQuwo1CXG/tu",
+  "__v": 0
+}]

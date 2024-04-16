@@ -1,0 +1,12 @@
+GET http://127.0.0.1:4127
+
+
+###
+
+GET http://127.0.0.1:4127/favourites
+
+###
+GET http://127.0.0.1:4127/favourites/something
+
+###
+POST http://127.0.0.1:4127/register

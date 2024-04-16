@@ -1,0 +1,100 @@
+* {
+  box-sizing: content-box;
+}
+.navbar-toggler {
+    border-color: #514BCF;
+  }
+
+main {
+  background-image: url("./assets/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg");
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+.location-input, 
+.location-search-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.location-search-btn {
+  background-color: #ffffff;
+}
+
+.location-search-btn:hover {
+  background-color: #514BCF;
+  border-color: #514BCF;
+}
+
+.footer {
+  color: #ffffff;
+  background-color:#517aa9 ;
+}
+
+.page-content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.tell-me {
+  min-height: 500px;
+}
+
+.todays-weather {
+  font-weight: bold;
+  padding-top: 80px;
+}
+
+.is-favorite input {
+  margin-right: 5px;
+}
+
+.weather-main {
+  padding: 20px 20px 80px 20px;
+}
+
+.weather-main > * {
+  padding: 0 10px;
+}
+
+.weather-main-img {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-day {
+  padding: 20px 40px;
+}
+
+.location {
+  margin-left: 20px;
+}
+
+.favourites-list {
+  max-width: 1000px;
+  column-count: 3;
+}
+
+.fav-icon {
+  width: 20px;
+  height: 20px;
+  
+}
+
+.dropdown-item {
+  width: auto;
+}
+
+@media only screen and (max-width: 550px) {
+  .favourites-list {
+    column-count: 1;
+  }
+}
+
+
+@media only screen and (min-width: 551px) and (max-width: 900px) {
+  .favourites-list {
+    column-count: 2;
+  }
+}
