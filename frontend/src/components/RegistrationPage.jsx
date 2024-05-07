@@ -3,12 +3,14 @@ import validationService from "./utils/validation.helpers.jsx";
 import Form from 'react-validation/build/form';
 import Input from 'react-validation/build/input';
 import authService from '../services/auth.service.js';
+import { useNavigate } from "react-router-dom";
 
 const RegistrationPage = () => {
     const form = useRef();
     const [username, setUsername] = useState(``);
     const [email, setEmail] = useState(``);
     const [password, setPassword] = useState(``);
+    const navigate = useNavigate();
 
     const handleRegister = async e => {
         e.preventDefault();
@@ -17,7 +19,11 @@ const RegistrationPage = () => {
         console.log('email ', email);
         console.log('password ', password);
 
-        authService.register(username, email, password);
+        const register = await authService.register(username, email, password);
+        if(register.email){
+            navigate(`/login`);
+        }
+
     }
 
     const onChangeUsername = e => {
