@@ -4,6 +4,10 @@ import { MemoryRouter } from 'react-router-dom';
 import NavRibbon from "../components/NavRibbon";
 
 describe(`NavRibbon test suite`, () => {
+    beforeEach(() => {
+        localStorage.setItem('user', JSON.stringify({username: 'Cristina'}));
+    });
+    
     test(`it should render Home link'`, () => {
         render(<NavRibbon favouriteLocations={[]}></NavRibbon>, { wrapper: MemoryRouter });
 

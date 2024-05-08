@@ -4,6 +4,10 @@ import { MemoryRouter } from 'react-router-dom';
 import WeatherPage from "../components/WeatherPage";
 
 describe(`WeatherPage test suite`, () => {
+    beforeEach(() => {
+        localStorage.setItem('user', JSON.stringify({username: 'Cristina'}));
+    });
+    
     test(`it should call a function when add to favourites is selected'`, () => {
         const mockCallback = vi.fn();
 
