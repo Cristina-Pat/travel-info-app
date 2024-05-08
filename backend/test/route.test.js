@@ -15,7 +15,7 @@ describe('Server test', () => {
     // Delete the test database, register new user, and login before all tests
     before(async () => {
         await mongoose.connection.dropDatabase();
-        const username = 'testuser';
+        const username = 'Cristina';
         const email = 'test@example.com';
         const password = '456789';
 
@@ -44,6 +44,7 @@ describe('Server test', () => {
 
         const getRes = await request.post('/favourites').send({ accessToken: accessToken });
         expect(getRes).to.have.status(200);
+        console.log(getRes.body);
         expect(getRes.body[0]).to.be.equal('Dublin');
     });
     
@@ -53,6 +54,7 @@ describe('Server test', () => {
 
         const getRes = await request.post('/favourites').send({ accessToken: accessToken });
         expect(getRes).to.have.status(200);
+        console.log(getRes.body);
         expect(getRes.body.length).to.be.equal(0);
     });
 });
