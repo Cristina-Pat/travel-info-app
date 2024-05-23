@@ -36,7 +36,7 @@ DFCorp are interested in expanding their portfolio of applications that you have
 
 > Before proceeding, ensure that you have a solid understanding of why a user needs this software and the benefits that it will bring to them (See Task 1).
 
-## Core Features
+### Core Features
 
 The Business Analyst team working with DFCorp has identified the following features that should be implemented:
 
@@ -48,9 +48,8 @@ The Business Analyst team working with DFCorp has identified the following featu
 
 The layouts are pretty much agreed with the main stakeholder but they are open for you to put your creative flair into the colour scheme and any images used (that are not specific to the location content).  They are also open to suggestions for the name of the application and its logo.
 
-> **Note:** The use of a generative AI tool to complete tasks relating to the specific requirements above is NOT allowed.  All work here should be your own.
 
-## Additional Features
+### Additional Features
 
 In addition to these features, should time allow, the client has asked for the application to display the following on the same view as the weather (as per the wireframes):
 
@@ -59,11 +58,8 @@ In addition to these features, should time allow, the client has asked for the a
 
 Please see the wireframes for more information about the specific data and layout to be used to base your application on
 
-> **Note:** The use of a generative AI tool to help complete tasks relating to these further requirements is allowed but should be clearly documented.
 
----
-
-## Tasks
+### Tasks
 
 1. From the requirements listed above, devise a set of user stories that describe the functionality that the client has requested
 2. From the wireframes and the user stories, devise a component hierarchy that will help in the construction of the web application and explain your reasoning for this hierarchy
@@ -77,7 +73,7 @@ Ensure that the application that you submit will run in the development environm
 
 ---
 
-## Tips
+### Tips
 
 - Commit regularly to GitHub with clear commit messages - write a failing test, pass the test, commit, etc
 - You should put your component hierarchies, state identification notation and test plans in the markdown file in the `docs` folder, if you decide to use some form of Scrum board to track your progress, you should include a screenshot of this in the markdown file
@@ -85,13 +81,13 @@ Ensure that the application that you submit will run in the development environm
 
 ---
 
-## APIs
+### APIs
 
 The following APIs can be used in this project.  Be mindful of any request limits and DO NOT use any APIs that require billing information.
 
 ---
 
-### Weather API
+#### Weather API
 
 For weather information, you can use the free ***OpenWeatherMap*** API by signing up for a free developer key - select the ***FREE*** tier here:
 
@@ -108,7 +104,7 @@ The data returned will be in JSON format and will contain a list of weather data
 
 An example of the returned weather data can be found in the `data` folder of this repository.
 
-#### Further Helper Code
+##### Further Helper Code
 
 <details>
 The following code will help you extract the weather data returned from the API:
@@ -160,7 +156,7 @@ const weatherBoxes = days.slice(1).map((day) => (
 > `WeatherBox` is a component that displays weather data for a single day (as per the small weather box in the wireframe).
 > `weatherBoxes` maps the array of days found by calling `updateState` (and subsequently `getDayIndicies`) and to an array of the `WeatherBox` components for each day.
 
-#### Using the Weather Icons
+##### Using the Weather Icons
 
 Inspecting the return from the weather API, you will see that a number of icons can be referenced as shown in this excerpt from the dummy data file in the `data` folder of this repository:
 
@@ -189,7 +185,7 @@ The `/assets/weather-icons` folder is in the `public` folder of your application
 
 ---
 
-### Maps API
+#### Maps API
 
 For maps use the free ***TomTom*** API by signing up for a free developer key:
 
@@ -240,7 +236,7 @@ const mapElement = useRef();
 
 ---
 
-### Hotel API
+#### Hotel API
 
 For hotel information, you can use the free ***RapidAPI*** to access the ***[Priceline.com](https://rapidapi.com/davidtaoweiji/api/priceline-com/)*** API by signing up for a free developer key.
 
@@ -272,7 +268,7 @@ An example of hotel data can be seen in the file `dummyHotelData.json` in the `d
 
 ---
 
-## Wireframes
+### Wireframes
 
 The wireframes for the application can be found in the following Miro board:
 
@@ -289,7 +285,7 @@ After running the Travel Info Web Application without any backend services other
 
 > Before proceeding, ensure that you have a solid understanding of why a user needs this software and the benefits that it will bring to them (See Task 1).
 
-## Core Features
+### Core Features
 
 The Business Analyst team working with the Product Owner at DFCorp have identified the following core features that the backend services should provide:
 
@@ -305,9 +301,8 @@ The Business Analyst team working with the Product Owner at DFCorp have identifi
 
 You may architect the backend services in any way you see fit.  Authentication can be handled through a simple check of username/password on each request but more efficient and secure methods are encouraged.  The storage of user data and favourite locations can be done in any way you see fit but must be held in a MongoDB database.
 
-> **Note:** The use of a generative AI tool to complete tasks relating to the specific requirements above is NOT allowed.  All work here should be your own.
 
-## Additional Features
+### Additional Features
 
 DFCorp have been made aware that inserting API keys into frontend applications can leave their accounts open to abuse.  To counter this, they have asked that you create proxy services that will allow the frontend application to make requests to the backend services without exposing the API keys.
 
@@ -329,7 +324,7 @@ The Product Owner at DFCorp has also identified a number of additional features 
 
 ---
 
-## Tasks
+### Tasks
 
 1. Explain why the customer needs the backend services and the benefits that it will bring to them.  You should include the following in your explanation:
    - The problems that the backend services will solve
@@ -340,14 +335,10 @@ The Product Owner at DFCorp has also identified a number of additional features 
 4. Create the application using a test-driven development (TDD) approach and the NodeJS/Express/MongoDB stack
 5. Create a set of tests that validate the functionality of the backend services using POSTMAN
 
-### Bonus Task (Strictly optional but would be great!)
+#### Bonus Task (Strictly optional but would be great!)
 
 Can you deploy the frontend and backend to cloud services such as Netlify and Render and implement a cloud-based database?
 
 If you can, provide links to your deployed applications and databases in the markdown file in the `docs` folder.  This should include a **username** and **password** that can be used to test the deployment.
 
----
-
-
----
 
